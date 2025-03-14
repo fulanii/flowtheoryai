@@ -3,9 +3,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background: var(--background-color);
+  margin-bottom: 100px;
+
 }
 .hero {
   display: flex;

@@ -1,5 +1,4 @@
 #nav-section {
-  background: var(--background-color);
   color: var(--text-color);
 }
 .nav {
@@ -41,6 +40,8 @@
   flex-direction: row;
   justify-content: space-evenly;
   font-size: 25px;
+  border: none;
+  color: inherit;
 }
 .nav-cta-btn:hover {
   cursor: pointer;
@@ -56,7 +57,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--dark-bg-color);
+  background: var(--background-color);
   overflow: scroll;
   justify-content: center;
   align-items: center;
@@ -65,12 +66,7 @@
   margin-bottom: 25px;
 }
 .modal-item a {
-  font-size: 45px;
-}
-.modal .nav-cta-btn {
-  justify-content: space-between;
-  font-size: 45px;
-  width: fit-content;
+  font-size: 40px;
 }
 /* ^^^^ */
 /* media queries */

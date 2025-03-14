@@ -10,13 +10,17 @@
     <meta name="robots" content="index, follow">
     
     <title>FlowtheoryAI - Home </title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/styles.css">
     <!-- <link rel="icon" type="image/png" href="/assets/favicon.png"> --> <!-- #TODO: add favicon -->
 
     <!-- external fonts, icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+
+
 
     <!-- Schema Markup -->
     <!-- #TODO: add x handle -->
@@ -44,7 +48,7 @@
             </a>
 
             <div class="nav-center">
-                <a href="">About</a>
+                <a href="#about-section">About</a>
                 <a href="">Services</a>
             </div>
 
@@ -54,7 +58,7 @@
         <div class="modal">
             <a href=""> <i class="bi bi-x"></i> </a>
             <div class="modal-content">
-                <div class="modal-item"><a href="">About</a></div>
+                <div class="modal-item"><a href="#about-section">About</a></div>
                 <div class="modal-item"><a href="">Services</a></div>
                 <button class="nav-cta-btn modal-item"><span>Book a Call</span> <i class="bi bi-arrow-right"></i> </button>
             </div>
@@ -79,9 +83,52 @@
     </section>
 
     <!-- about -->
-    <section id="about-section">
-        <h1>About us</h1>
+    <section id="about-section">  <!-- TODO: replace loren ipsum/fake text with real text -->
+        <div class="story">
+            <div class="text-content">
+                <h1 class="about-visual-h1">Our Story</h1>
+                <p class="about-visual-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+            <div class="story-img-div">
+                <img clas="" src="assets/our-story.webp" alt="our story image">
+            </div>
+        </div>
+
+        <div class="vision">
+            <div class="text-content">
+                <h1 class="about-visual-h1">Our Vision</h1>
+                <p class="about-visual-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+            <div class="vision-img-div">
+                <img src="assets/our-vision.avif" alt="our vision image">
+            </div>
+        </div>
+
+        <div class="values">
+            <div class="value-cards">
+                <div class="value-card">
+                    <img src="assets/image1.webp" alt="Title 1">
+                    <h3>Title 1</h3>
+                    <p class="value-p">To build the most powerful business content tool in the world.</p>
+                </div>
+                <div class="value-card">
+                    <img src="assets/image2.webp" alt="Title 2">
+                    <h3>Title 2</h3>
+                    <p class="value-p">To help businesses improve their sales results through great storytelling.</p>
+                </div>
+                <div class="value-card card-3">
+                    <img src="assets/image3.webp" alt="Title 3">
+                    <h3>Title 3</h3>
+                    <p class="value-p">To create a workspace that challenges team members and stimulates constant growth.</p>
+                </div>
+            </div>
+        </div> 
     </section>
+
+    <!-- services -->
+     <section id="services">
+        
+     </section>
 
     <script src="js/navbar.js"></script>
 </body>
