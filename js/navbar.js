@@ -24,3 +24,5 @@ bookBtn.forEach((btn) => {
     document.getElementById("booking").scrollIntoView({ behavior: "smooth" });
   });
 });
+
+
