@@ -9,18 +9,16 @@
     <meta name="author" content="FlowtheoryAI">
     <meta name="robots" content="index, follow">
     
-    <title>FlowtheoryAI - Home </title>
-    <!-- <link rel="icon" type="image/png" href="/assets/favicon.png"> --> <!-- #TODO: add favicon -->
+    <title>FlowtheoryAI </title>
+    <link rel="icon" type="image/png" href="/assets/favicon.ico">
 
-    <!-- external fonts, icons -->
+    <!-- external fonts, icons, animations -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/styles.css">
-    
-
-
 
     <!-- Schema Markup -->
     <!-- #TODO: add x handle -->
@@ -49,7 +47,7 @@
 
             <div class="nav-center">
                 <a href="#about-section">About</a>
-                <a href="">Services</a>
+                <a href="#services-section">Services</a>
             </div>
 
             <button class="nav-cta-btn"><span>Book a Call</span> <i class="bi bi-arrow-right"></i> </button>
@@ -59,7 +57,7 @@
             <a href=""> <i class="bi bi-x"></i> </a>
             <div class="modal-content">
                 <div class="modal-item"><a href="#about-section">About</a></div>
-                <div class="modal-item"><a href="">Services</a></div>
+                <div class="modal-item"><a href="#services-section">Services</a></div>
                 <button class="nav-cta-btn modal-item"><span>Book a Call</span> <i class="bi bi-arrow-right"></i> </button>
             </div>
         </div>
@@ -84,52 +82,77 @@
 
     <!-- about -->
     <section id="about-section">  <!-- TODO: replace loren ipsum/fake text with real text -->
-        <div class="story">
+        <div class="story" > <!-- data-aos="flip-left" -->
             <div class="text-content">
-                <h1 class="about-visual-h1">Our Story</h1>
-                <p class="about-visual-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <h1 class="about-visual-h1">Our <span class="about-h1">Story</span></h1>
+                <p class="about-visual-p">FlowtheoryAI was founded with a clear mission: to help businesses unlock their full potential by leveraging the power of AI automation. We saw a common challenge—companies wasting time on repetitive tasks that could be streamlined with intelligent automation. With a passion for innovation and efficiency, we built FlowtheoryAI to bridge this gap. Our journey has been driven by the belief that automation should be accessible, powerful, and tailored to fit the unique needs of every business.
+
+                </p>
             </div>
             <div class="story-img-div">
                 <img clas="" src="assets/our-story.webp" alt="our story image">
             </div>
         </div>
 
-        <div class="vision">
+        <div class="vision"> <!-- data-aos="flip-right"-->
             <div class="text-content">
-                <h1 class="about-visual-h1">Our Vision</h1>
-                <p class="about-visual-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <h1 class="about-visual-h1">Our <span class="about-h1">Vision</span></h1>
+                <p class="about-visual-p">Our vision is to revolutionize the way businesses operate by integrating AI-driven automation into their workflows. We envision a future where companies can focus on growth, creativity, and strategy while AI handles the repetitive and time-consuming tasks. By continuously pushing the boundaries of automation, we aim to empower businesses with smarter, faster, and more efficient processes—transforming the way they work and innovate.
+
+                </p>
             </div>
             <div class="vision-img-div">
                 <img src="assets/our-vision.avif" alt="our vision image">
             </div>
         </div>
-
-        <div class="values">
-            <div class="value-cards">
-                <div class="value-card">
-                    <img src="assets/image1.webp" alt="Title 1">
-                    <h3>Title 1</h3>
-                    <p class="value-p">To build the most powerful business content tool in the world.</p>
-                </div>
-                <div class="value-card">
-                    <img src="assets/image2.webp" alt="Title 2">
-                    <h3>Title 2</h3>
-                    <p class="value-p">To help businesses improve their sales results through great storytelling.</p>
-                </div>
-                <div class="value-card card-3">
-                    <img src="assets/image3.webp" alt="Title 3">
-                    <h3>Title 3</h3>
-                    <p class="value-p">To create a workspace that challenges team members and stimulates constant growth.</p>
-                </div>
-            </div>
-        </div> 
     </section>
 
     <!-- services -->
-     <section id="services">
-        
-     </section>
+    <section id="services-section">
+    <div class="values">
+        <div class="value-cards">
+            <div class="value-card" data-aos="fade-right">
+                <img src="assets/image1.webp" alt="Title 1">
+                <h3>Inbound AI Voice Agents</h3>
+                <p class="value-p">AI-powered voice agents that handle customer calls, provide support, and automate responses for seamless communication.</p>
+            </div>
+            <div class="value-card" data-aos="fade-up">
+                <img src="assets/image2.webp" alt="Title 2">
+                <h3>AI Growth Systems</h3>
+                <p class="value-p">Intelligent automation systems designed to optimize marketing, sales, and outreach for scalable business growth.</p>
+            </div>
+            <div class="value-card card-3" data-aos="fade-left">
+                <img src="assets/image3.webp" alt="Title 3">
+                <h3>Customer & Business Agentic Solutions</h3>
+                <p class="value-p">AI-driven agents that enhance both customer interactions and internal business processes for improved efficiency and engagement.</p>
+            </div>
+        </div>
+    </div> 
+    </section>
 
+    <!-- book call -->
+    <section id="booking">
+        <!-- Cal inline embed code begins -->
+        <div style="width:90%;height:100%;overflow:scroll" id="my-cal-inline"></div>
+        <script type="text/javascript">
+        (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+        Cal("init", "discovery-call", {origin:"https://cal.com"});
+
+        Cal.ns["discovery-call"]("inline", {
+            elementOrSelector:"#my-cal-inline",
+            config: {"layout":"month_view","theme":"auto"},
+            calLink: "hakim-cisse/discovery-call",
+        });
+
+        Cal.ns["discovery-call"]("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#000"},"dark":{"cal-brand":"#000"}},"hideEventTypeDetails":false,"layout":"month_view"});
+        </script>
+        <!-- Cal inline embed code ends -->
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        </script>
     <script src="js/navbar.js"></script>
 </body>
 </html>

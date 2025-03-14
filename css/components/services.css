@@ -1,0 +1,50 @@
+/* services */
+.values {
+  margin-bottom: 100px;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin-top: 100px;
+}
+.value-cards {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+}
+.value-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+  padding: 40px;
+  text-align: center;
+}
+.value-card img {
+  object-fit: cover;
+}
+.value-card h3{
+    font-family: var(--font-azeret-mono);
+}
+.value-p {
+  text-align: center;
+  max-width: 350px;
+  font-family: var(--font-azeret-mono);
+}
+
+/* media querties */
+@media (max-width: 900px) {
+  .value-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .card-3 {
+    grid-column: span 2;
+  }
+}
+@media (max-width: 500px) {
+  .value-cards {
+    display: flex;
+    flex-direction: column;
+  }
+}

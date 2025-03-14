@@ -13,6 +13,9 @@
     --font-body: 'Inter', sans-serif;
     --font-heading: 'Poppins', sans-serif;
     --font-azeret-mono: azeret-mono, "azeret mono", monospace;
+
+    /* effects */
+    --yellow-shadow-effect: 5px 3px 10px var(--cta-btn-bgC), 2px 2px 1px var(--cta-btn-bgC);
 }
 
 /* Apply Box-Sizing Globally */
@@ -28,13 +31,13 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    /* overflow-x: hidden; */
 }
 /* Set Up Body */
 body {
     font-family: var(--font-body);
     color: var(--text-color);
     line-height: 1.6;
-    overflow-x: hidden;
     background: var(--background-color);
     background-attachment: fixed; /* Keeps the gradient consistent */
     background-size: cover; /* Ensures it fills the entire screen */

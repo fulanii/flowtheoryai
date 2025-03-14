@@ -32,7 +32,7 @@
   color: var(--text-color);
   text-align: center;
   font-family: var(--font-azeret-mono);
-  text-shadow: 5px 3px 10px var(--cta-btn-bgC), 2px 2px 1px var(--cta-btn-bgC);
+  text-shadow: var(--yellow-shadow-effect);
 }
 .hero-h2 {
   font-family: syne, sans-serif; /* azeret-mono, "azeret mono", monospace; */
