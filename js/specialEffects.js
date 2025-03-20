@@ -46,10 +46,10 @@ gsap.to("#text", {
 });
 
 // shaking effect
-gsap.to("#cta", {
-  x: "10px",
-  duration: 0.2,
-  repeat: 20,
-  yoyo: true,
-  ease: "rough({ template: none.out, strength: 3, points: 20, taper: 'none', randomize: true, clamp: false })",
-});
+//gsap.to("#cta", {
+//  x: "10px",
+//  duration: 0.2,
+//  repeat: 20,
+//  yoyo: true,
+//  ease: "rough({ template: none.out, strength: 3, points: 20, taper: 'none', randomize: true, clamp: false })",
+//});
