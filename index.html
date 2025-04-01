@@ -12,15 +12,7 @@
     <link rel="icon" type="image/png" href="/assets/favicon.ico">
 
     <!-- external fonts, icons, animations -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
-
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -102,7 +94,7 @@
                     </svg>
                 </div>
     
-                <div class="absolute top-1/7 left-0">
+                <div class="ani-svg-1">
                     <div class="animation-svg">
                         <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-database text-flow-lightBlue">
                             <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
@@ -112,7 +104,7 @@
                     </div>
                 </div>
     
-                <div class="absolute bottom-1/7 right-0">
+                <div class="ani-svg-2">
                     <div class="animation-svg">
                         <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-database text-flow-lightBlue">
                             <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
@@ -123,8 +115,8 @@
                 </div>
     
                 <div class="animation-text">
-                    <h3 class="text-xl font-semibold mb-2">AI Automation Engine</h3>
-                    <p class="text-center text-white/70">Our proprietary technology automates complex workflows</p>
+                    <h3 class="ani-h3 text-xl font-semibold mb-2">AI Automation Engine</h3>
+                    <p class="ani-p text-center text-white/70">Our proprietary technology automates complex workflows</p>
                 </div>
             </div>
         </div>
@@ -207,63 +199,10 @@
         
     </section>
 
-    <!-- about -->
-    <!-- <section id="about-section"> 
-        <div class="story" > 
-            <div class="text-content">
-                <h1 class="about-visual-h1">Our <span class="about-h1">Story</span></h1>
-                <p class="about-visual-p">FlowtheoryAI was founded with a clear mission: to help businesses unlock their full potential by leveraging the power of AI automation. We saw a common challenge—companies wasting time on repetitive tasks that could be streamlined with intelligent automation. With a passion for innovation and efficiency, we built FlowtheoryAI to bridge this gap. Our journey has been driven by the belief that automation should be accessible, powerful, and tailored to fit the unique needs of every business.
 
-                </p>
-            </div>
-            <div class="story-img-div">
-                <img clas="" src="assets/our-story.webp" alt="our story image">
-            </div>
-        </div>
 
-        <div class="vision"> 
-            <div class="text-content">
-                <h1 class="about-visual-h1">Our <span class="about-h1">Vision</span></h1>
-                <p class="about-visual-p">Our vision is to revolutionize the way businesses operate by integrating AI-driven automation into their workflows. We envision a future where companies can focus on growth, creativity, and strategy while AI handles the repetitive and time-consuming tasks. By continuously pushing the boundaries of automation, we aim to empower businesses with smarter, faster, and more efficient processes—transforming the way they work and innovate.
 
-                </p>
-            </div>
-            <div class="vision-img-div">
-                <img src="assets/our-vision.avif" alt="our vision image">
-            </div>
-        </div>
-    </section> -->
-
-    <!-- book call -->
-     <!-- Cal inline embed code begins -->
-    <!-- <section id="booking">
-        
-        <div style="width:90%;height:100%;overflow:scroll" id="my-cal-inline"></div>
-        <script type="text/javascript">
-        (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-        Cal("init", "discovery-call", {origin:"https://cal.com"});
-
-        Cal.ns["discovery-call"]("inline", {
-            elementOrSelector:"#my-cal-inline",
-            config: {"layout":"month_view","theme":"auto"},
-            calLink: "hakim-cisse/discovery-call",
-        });
-
-        Cal.ns["discovery-call"]("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#000"},"dark":{"cal-brand":"#000"}},"hideEventTypeDetails":false,"layout":"month_view"});
-        </script>
-        
-    </section> -->
-    <!-- Cal inline embed code ends -->
-
-    <!-- <footer id="footer">
-        <h1 class="footer__h1">&copy; 2025 Flow Theory AI All Right Reserved.</h1>
-    </footer> -->
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script> AOS.init(); </script>
     <script src="js/navbar.js"></script>
-    <script src="js/specialEffects.js"></script>
-
 </body>
 </html>
 
