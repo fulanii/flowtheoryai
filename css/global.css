@@ -2,12 +2,17 @@
     /* Colors */
     --primary-color: #4F46E5;
     --secondary-color: #6366F1;
-    --background-color: #093142;
+    --third-color: rgb(51 195 240);
+    --background-color: rgb(15 15 17);
     /* linear-gradient(115deg, #62cff4, #2c67f2); linear-gradient(45deg, #08265d 0, #104cba 45%);  brown;  linear-gradient(45deg, #551bac, #315dc4); */
     --text-color: white;
     --accent-color: #EC4899;
-    --cta-btn-bgC: orange;
+    --cta-btn-bgC: #1e3a8ae6;
     --dark-bg-color: #17222c;
+    --svg-color: rgb(51 195 240);
+    --svg-bg: #1e3a8a33;
+    --animation-bg: #ffffff1a;
+    --gray-text: #ffffffb3;
 
     /* Typography */
     --font-body: 'Inter', sans-serif;
@@ -15,7 +20,7 @@
     --font-azeret-mono: azeret-mono, "azeret mono", monospace;
 
     /* effects */
-    --yellow-shadow-effect: 5px 3px 10px var(--cta-btn-bgC), 2px 2px 1px var(--cta-btn-bgC);
+    --hero-h2-shadow: 3px 3px 10px var(--third-color);
 }
 
 /* Apply Box-Sizing Globally */

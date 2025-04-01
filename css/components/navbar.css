@@ -25,23 +25,45 @@
 .logo {
   font-size: 25px;
 }
+.logo-img{
+  height: 60px;
+}
 .nav-center {
   display: flex;
   gap: 30px;
   font-size: 20px;
 }
+.underline-animation {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-animation::after {
+  content: "";
+  position: absolute;
+  left: -10%;
+  bottom: -2px; /* Adjust this to position the underline */
+  width: 0;
+  height: 2px; /* Adjust thickness */
+  background-color: var(--third-color); /* Uses text color */
+  transition: width 0.2s ease-in-out;
+}
+
+.underline-animation:hover::after {
+  width: 130%;
+}
 .nav-cta-btn {
   border: solid;
-  padding: 8px;
+  padding: 10px;
   border-radius: 10px;
   background-color: var(--cta-btn-bgC);
-  width: 200px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   font-size: 25px;
   border: none;
   color: inherit;
+  width: fit-content;
 }
 .nav-cta-btn:hover {
   cursor: pointer;
