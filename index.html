@@ -1,208 +1,551 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="FlowtheoryAI helps businesses automate repetitive tasks and optimize workflows using AI.">
-    <meta name="keywords" content="AI automation, business automation, workflow automation, process automation">
-    <meta name="author" content="FlowtheoryAI">
-    <meta name="robots" content="index, follow">
-    
-    <title>FlowtheoryAI </title>
-    <link rel="icon" type="image/png" href="/assets/favicon.ico">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="FlowtheoryAI helps businesses automate repetitive tasks and optimize workflows using AI."
+    />
+    <meta
+      name="keywords"
+      content="AI automation, business automation, workflow automation, process automation"
+    />
+    <meta name="author" content="FlowtheoryAI" />
+    <meta name="robots" content="index, follow" />
+
+    <title>FlowtheoryAI</title>
+    <link rel="icon" type="image/png" href="/assets/favicon.ico" />
 
     <!-- external fonts, icons, animations -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 
     <!-- Schema Markup -->
     <!-- #TODO: add x handle -->
-    <script type="application/ld+json"> 
-    {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "FlowtheoryAI",
-    "url": "https://flowtheoryai.com",
-    "logo": "https://yourwebsite.com/assets/logo.png",
-    "sameAs": [
-    "https://x.com/yourhandle",
-    ],
-    "description": "FlowtheoryAI helps businesses automate tasks using AI."
-    }
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "FlowtheoryAI",
+        "url": "https://flowtheoryai.com",
+        "logo": "https://yourwebsite.com/assets/logo.png",
+        "sameAs": ["https://x.com/yourhandle"],
+        "description": "FlowtheoryAI helps businesses automate tasks using AI."
+      }
     </script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- nav-->
-    <section id="nav-section">  <!-- TODO: add all href links, and buttons links and logic -->
-        <nav class="nav">
-            <a href="" class="logo">
-                <img src="https://lh3.googleusercontent.com/d/11tuEgfKlhZTW-tuBVCH7Irfq-CjBzegU" alt="" class="logo-img">
-            </a>
+    <section id="nav-section">
+      <nav class="nav">
+        <a href="" class="logo">
+          <img
+            src="https://lh3.googleusercontent.com/d/11tuEgfKlhZTW-tuBVCH7Irfq-CjBzegU"
+            alt=""
+            class="logo-img"
+          />
+        </a>
 
-            <div class="nav-center">
-                <a href="#services-section" class="underline-animation">Services</a>
-                <a href="#about-section" class="underline-animation">About</a>
-            </div>
-
-            <button class="nav-cta-btn" id="cta">Book a Call</button>
-            <a href=""> <i class="bi bi-list"></i> </a>
-        </nav>
-        <div class="modal">
-            <a href=""> <i class="bi bi-x"></i> </a>
-            <div class="modal-content">
-                <div class="modal-item"><a href="#services-section" class="underline-animation">Services</a></div>
-                <div class="modal-item"><a href="#about-section" class="underline-animation">About</a></div>
-                <!-- <button class="nav-cta-btn modal-item" id="cta">Book a Call</button> -->
-            </div>
+        <div class="nav-center">
+          <a href="" class="underline-animation services-a">Services</a>
+          <a href="#about-section" class="underline-animation about-a">About</a>
         </div>
+
+        <button class="nav-cta-btn" id="cta">Book a Call</button>
+        <a href=""> <i class="bi bi-list"></i> </a>
+      </nav>
+      <div class="modal">
+        <a href=""> <i class="bi bi-x"></i> </a>
+        <div class="modal-content">
+          <div class="modal-item">
+            <a href="" class="underline-animation modalSer-a">Services</a>
+          </div>
+          <div class="modal-item">
+            <a href="" class="underline-animation modalAbt-a">About</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- hero -->
-    <section id="hero-section"> <!-- TODO: add btn on click logic -->
-        <div class="hero-container">
-            <div class="hero">
-                <!-- <h1 class="hero-h1" id="text">Welcome</h1> -->
-                <div class="custom">
-                    <span> Custom Next Generation AI Solutions </span>
-                </div>
-                <h2 class="hero-h2">
-                    <span class="hero-h2-span">Integrating AI Into Businesses</span><br>
-                    <span>To Streamline Critical</span><br>
-                    <span>Processes</span>
-                </h2>
-                <div class="cta-div">
-                    <button class="nav-cta-btn" id="cta"> <span>Start Your Ai Journey <i class="bi bi-arrow-right"></i> </span>  </button>
-                    <button class="nav-cta-btn get-started-btn" id="cta"> <span>Explore Services</span>  </button>
-                </div>
-            </div>
-            <div class="bot-animation">
-                <div class="animation-svg">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bot text-flow-lightBlue">
-                        <path d="M12 8V4H8">
-                            
-                        </path><rect width="16" height="12" x="4" y="8" rx="2">
-    
-                        </rect>
-                        <path d="M2 14h2"></path><path d="M20 14h2"></path><path d="M15 13v2">
-    
-                        </path>
-                        <path d="M9 13v2">
-                            
-                        </path>
-                    </svg>
-                </div>
-    
-                <div class="ani-svg-1">
-                    <div class="animation-svg">
-                        <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-database text-flow-lightBlue">
-                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                            <path d="M3 5V19A9 3 0 0 0 21 19V5"></path> 
-                            <path d="M3 12A9 3 0 0 0 21 12"></path>
-                        </svg>
-                    </div>
-                </div>
-    
-                <div class="ani-svg-2">
-                    <div class="animation-svg">
-                        <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-database text-flow-lightBlue">
-                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                            <path d="M3 5V19A9 3 0 0 0 21 19V5"></path> 
-                            <path d="M3 12A9 3 0 0 0 21 12"></path>
-                        </svg>
-                    </div>
-                </div>
-    
-                <div class="animation-text">
-                    <h3 class="ani-h3 text-xl font-semibold mb-2">AI Automation Engine</h3>
-                    <p class="ani-p text-center text-white/70">Our proprietary technology automates complex workflows</p>
-                </div>
-            </div>
+    <section id="hero-section">
+      <div class="hero-container">
+        <div class="hero">
+          <!-- <h1 class="hero-h1" id="text">Welcome</h1> -->
+          <div class="custom">
+            <span> Custom Next Generation AI Solutions </span>
+          </div>
+          <h2 class="hero-h2">
+            <span class="hero-h2-span">Integrating AI Into Businesses</span
+            ><br />
+            <span>To Streamline Critical</span><br />
+            <span>Processes</span>
+          </h2>
+          <div class="cta-div">
+            <button class="nav-cta-btn" id="cta">
+              <span
+                >Start Your Ai Journey <i class="bi bi-arrow-right"></i>
+              </span>
+            </button>
+            <button class="nav-cta-btn get-started-btn explore-btn" id="cta">
+              <span>Explore Services</span>
+            </button>
+          </div>
         </div>
+        <div class="bot-animation">
+          <div class="animation-svg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="64"
+              height="64"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-bot text-flow-lightBlue"
+            >
+              <path d="M12 8V4H8"></path>
+              <rect width="16" height="12" x="4" y="8" rx="2"></rect>
+              <path d="M2 14h2"></path>
+              <path d="M20 14h2"></path>
+              <path d="M15 13v2"></path>
+              <path d="M9 13v2"></path>
+            </svg>
+          </div>
+
+          <div class="ani-svg-1">
+            <div class="animation-svg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-database text-flow-lightBlue"
+              >
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
+                <path d="M3 12A9 3 0 0 0 21 12"></path>
+              </svg>
+            </div>
+          </div>
+
+          <div class="ani-svg-2">
+            <div class="animation-svg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-database text-flow-lightBlue"
+              >
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
+                <path d="M3 12A9 3 0 0 0 21 12"></path>
+              </svg>
+            </div>
+          </div>
+
+          <div class="animation-text">
+            <h3 class="ani-h3 text-xl font-semibold mb-2">
+              AI Automation Engine
+            </h3>
+            <p class="ani-p text-center text-white/70">
+              Our proprietary technology automates complex workflows
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- services -->
     <section id="services-section">
-        <h1 class="comp-h1">Comprehensive</h1>
-        <h3 class="h3-ai">AI Automation Services</h3>
-        <p class="p-desc">Our suite of advanced AI solutions is designed to transform your business operations and drive sustainable growth.</p>
-        
-        <div class="cards-div">
-            <div class="card">
-                <div class="image">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brain-circuit text-flow-lightBlue"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"></path><path d="M9 13a4.5 4.5 0 0 0 3-4"></path><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"></path><path d="M3.477 10.896a4 4 0 0 1 .585-.396"></path><path d="M6 18a4 4 0 0 1-1.967-.516"></path><path d="M12 13h4"></path><path d="M12 18h6a2 2 0 0 1 2 2v1"></path><path d="M12 8h8"></path><path d="M16 8V5a2 2 0 0 1 2-2"></path><circle cx="16" cy="13" r=".5"></circle><circle cx="18" cy="3" r=".5"></circle><circle cx="20" cy="21" r=".5"></circle><circle cx="20" cy="8" r=".5"></circle></svg>
-                </div>
-                <h3 class="card-title">
-                    AI Strategy Consulting
-                </h3>
-                <p class="card-text">
-                    We help you identify opportunities for AI implementation in your business processes.
-                </p>
-            </div>
-            <div class="card">
-                <div class="image">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-workflow text-flow-lightBlue"><rect width="8" height="8" x="3" y="3" rx="2"></rect><path d="M7 11v4a2 2 0 0 0 2 2h4"></path><rect width="8" height="8" x="13" y="13" rx="2"></rect></svg>
-                </div>
-                <h3 class="card-title">
-                    Process Automation
-                </h3>
-                <p class="card-text">
-                    Automate repetitive tasks and workflows to increase efficiency and reduce errors.
-                </p>
-            </div>
-            <div class="card">
-                <div class="image">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square text-flow-lightBlue"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-                </div>
-                <h3 class="card-title">
-                    Conversational AI
-                </h3>
-                <p class="card-text">
-                    Build intelligent chatbots and virtual assistants to enhance customer engagement.
-                </p>
-            </div>
-            <div class="card">
-                <div class="image">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-line text-flow-lightBlue"><path d="M3 3v16a2 2 0 0 0 2 2h16"></path><path d="m19 9-5 5-4-4-3 3"></path></svg>
-                </div>
-                <h3 class="card-title">
-                    Predictive Analytics
-                </h3>
-                <p class="card-text">
-                    Leverage data to forecast trends and make informed decisions for your business.
-                </p>
-            </div>
-            <div class="card">
-                <div class="image">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-server text-flow-lightBlue"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect><rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect><line x1="6" x2="6.01" y1="6" y2="6"></line><line x1="6" x2="6.01" y1="18" y2="18"></line></svg>
-                </div>
-                <h3 class="card-title">
-                    Custom AI Solutions
-                </h3>
-                <p class="card-text">
-                    Tailored AI systems designed specifically for your unique business challenges.
-                </p>
-            </div>
-            <div class="card">
-                <div class="image">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check text-flow-lightBlue"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                </div>
-                <h3 class="card-title">
-                    Secure Implementation
-                </h3>
-                <p class="card-text">
-                    Enterprise-grade security protocols for all AI implementations and integrations.
-                </p>
-            </div>
+      <h1 class="comp-h1">Comprehensive</h1>
+      <h3 class="h3-ai">AI Automation Services</h3>
+      <p class="p-desc">
+        Our suite of advanced AI solutions is designed to transform your
+        business operations and drive sustainable growth.
+      </p>
+
+      <div class="cards-div">
+        <div class="card">
+          <div class="image">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-brain-circuit text-flow-lightBlue"
+            >
+              <path
+                d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"
+              ></path>
+              <path d="M9 13a4.5 4.5 0 0 0 3-4"></path>
+              <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"></path>
+              <path d="M3.477 10.896a4 4 0 0 1 .585-.396"></path>
+              <path d="M6 18a4 4 0 0 1-1.967-.516"></path>
+              <path d="M12 13h4"></path>
+              <path d="M12 18h6a2 2 0 0 1 2 2v1"></path>
+              <path d="M12 8h8"></path>
+              <path d="M16 8V5a2 2 0 0 1 2-2"></path>
+              <circle cx="16" cy="13" r=".5"></circle>
+              <circle cx="18" cy="3" r=".5"></circle>
+              <circle cx="20" cy="21" r=".5"></circle>
+              <circle cx="20" cy="8" r=".5"></circle>
+            </svg>
+          </div>
+          <h3 class="card-title">AI Strategy Consulting</h3>
+          <p class="card-text">
+            We help you identify opportunities for AI implementation in your
+            business processes.
+          </p>
         </div>
-        
+        <div class="card">
+          <div class="image">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-workflow text-flow-lightBlue"
+            >
+              <rect width="8" height="8" x="3" y="3" rx="2"></rect>
+              <path d="M7 11v4a2 2 0 0 0 2 2h4"></path>
+              <rect width="8" height="8" x="13" y="13" rx="2"></rect>
+            </svg>
+          </div>
+          <h3 class="card-title">Process Automation</h3>
+          <p class="card-text">
+            Automate repetitive tasks and workflows to increase efficiency and
+            reduce errors.
+          </p>
+        </div>
+        <div class="card">
+          <div class="image">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-message-square text-flow-lightBlue"
+            >
+              <path
+                d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="card-title">Conversational AI</h3>
+          <p class="card-text">
+            Build intelligent chatbots and virtual assistants to enhance
+            customer engagement.
+          </p>
+        </div>
+        <div class="card">
+          <div class="image">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-chart-line text-flow-lightBlue"
+            >
+              <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
+              <path d="m19 9-5 5-4-4-3 3"></path>
+            </svg>
+          </div>
+          <h3 class="card-title">Predictive Analytics</h3>
+          <p class="card-text">
+            Leverage data to forecast trends and make informed decisions for
+            your business.
+          </p>
+        </div>
+        <div class="card">
+          <div class="image">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-server text-flow-lightBlue"
+            >
+              <rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect>
+              <rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect>
+              <line x1="6" x2="6.01" y1="6" y2="6"></line>
+              <line x1="6" x2="6.01" y1="18" y2="18"></line>
+            </svg>
+          </div>
+          <h3 class="card-title">Custom AI Solutions</h3>
+          <p class="card-text">
+            Tailored AI systems designed specifically for your unique business
+            challenges.
+          </p>
+        </div>
+        <div class="card">
+          <div class="image">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-shield-check text-flow-lightBlue"
+            >
+              <path
+                d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+              ></path>
+              <path d="m9 12 2 2 4-4"></path>
+            </svg>
+          </div>
+          <h3 class="card-title">Secure Implementation</h3>
+          <p class="card-text">
+            Enterprise-grade security protocols for all AI implementations and
+            integrations.
+          </p>
+        </div>
+      </div>
     </section>
 
+    <!-- about -->
+    <section id="about-section">
+      <div class="about-div">
+        <div class="about-text">
+          <h1 class="about-h1">Who We Are</h1>
+          <h3 class="about-h3">Our Mission & Values</h3>
+          <p class="about-p">
+            Flow Theory AI is at the forefront of AI automation, dedicated to
+            transforming how businesses operate through intelligent technology
+            solutions. Our team of experts combines deep technical knowledge
+            with strategic business understanding.
+          </p>
+          <p class="about-p">
+            We believe in developing AI solutions that are not only powerful and
+            efficient but also ethical, transparent, and aligned with human
+            values. Our mission is to democratize AI technology, making it
+            accessible and beneficial for businesses of all sizes.
+          </p>
 
+          <div class="checklist-div">
+            <div class="checklist-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-circle-check text-flow-lightBlue shrink-0 mt-0.5"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg>
+              <p>User-centered AI design</p>
+            </div>
 
+            <div class="checklist-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-circle-check text-flow-lightBlue shrink-0 mt-0.5"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                <p>Ethical AI implementation</p>
+            </div>
+
+            <div class="checklist-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-circle-check text-flow-lightBlue shrink-0 mt-0.5"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                <p>Continuous innovation</p>
+            </div>
+
+            <div class="checklist-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-circle-check text-flow-lightBlue shrink-0 mt-0.5"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                <p>Seamless integration with existing systems</p>
+            </div>
+
+            <div class="checklist-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-circle-check text-flow-lightBlue shrink-0 mt-0.5"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                <p>Performance-driven solutions</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-cards-div">
+          <div class="about-card">
+            <div class="image">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-award text-flow-lightBlue"
+              >
+                <path
+                  d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"
+                ></path>
+                <circle cx="12" cy="8" r="6"></circle>
+              </svg>
+            </div>
+            <h3 class="card-title">Industry Recognition</h3>
+            <p class="card-text">
+              Award-winning AI solutions recognized for innovation and
+              effectiveness
+            </p>
+          </div>
+
+          <div class="about-card">
+            <div class="image">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-users text-flow-lightBlue"
+              >
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="card-title">Expert Team</h3>
+            <p class="card-text">
+              AI specialists, data scientists, and industry consultants with
+              years of experience
+            </p>
+          </div>
+
+          <div class="about-card about-proof">
+            <div class="proof-card">
+              <div class="proof-number">98%</div>
+              <div class="proof-text">Client Satisfaction</div>
+            </div>
+
+            <div class="proof-card">
+              <div class="proof-number">250+</div>
+              <div class="proof-text">Projects Completed</div>
+            </div>
+
+            <div class="proof-card">
+              <div class="proof-number">40+</div>
+              <div class="proof-text">AI Experts</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="js/navbar.js"></script>
-</body>
+    <script src="js/hero.js"></script>
+  </body>
 </html>
+
+
 

@@ -1,90 +1,98 @@
 #about-section {
+  margin-top: 100px;
+  padding: 10px;
+}
+.about-div {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 100px;
 }
 .about-h1 {
-  text-shadow: var(--yellow-shadow-effect);
+  font-size: clamp(24px, 5vw, 40px);
+  font-weight: 300;
+  font-weight: 700;
 }
-
-/* story */
-.story {
-  display: flex;
-  align-items: center;
+.about-h3 {
+  font-size: clamp(24px, 5vw, 40px);
+  font-weight: 300;
+  color: var(--third-color);
+  font-weight: 700;
 }
-.text-content {
+.about-p {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+.about-text {
+  max-width: 600px;
+}
+.about-cards-div {
   display: flex;
   flex-direction: column;
-  width: 600px;
   justify-content: center;
 }
-.about-visual-h1 {
-  font-size: 40px;
-  font-weight: 700;
-  font-family: var(--font-azeret-mono);
-}
-.about-visual-p {
-  line-height: 40px;
-  font-family: var(--font-azeret-mono);
-}
-.story-img-div {
-  height: 300px;
-}
-.story-img-div img {
-  width: 100%;
-  height: 100%;
-}
-
-/* vision */
-.vision {
+.about-card {
+  background-color: var(--animation-bg);
   display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+}
+.card-text {
+  color: var(--gray-text);
+}
+.about-proof {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.proof-card {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  flex-direction: row-reverse;
 }
-.vision-img-div {
-  height: 300px;
-  margin-right: 20px;
+.proof-text {
+  color: var(--gray-text);
 }
-.vision-img-div img {
-  width: 100%;
-  height: 100%;
+.proof-number {
+  color: var(--third-color);
 }
-
-/* media querties */
-@media (max-width: 1050px) {
-  .text-content {
-    width: 500px;
+.checklist-div {
+  display: flex;
+  flex-direction: column;
+}
+.checklist-item {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+/* media query */
+@media (max-width: 1045px) {
+  .proof-card {
+    align-items: start;
   }
 }
-@media (max-width: 940px) {
-  .text-content {
-    width: 400px;
+@media (max-width: 700px) {
+  .about-div {
+    align-items: center;
+    flex-direction: column;
   }
-}
-@media (max-width: 840px) {
-  .story {
-    flex-direction: column-reverse;
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
-  .text-content {
-    width: 500px;
+  .proof-card {
+    align-items: center;
   }
-  .story-img-div,
-  .vision-img-div {
-    height: 250px;
-    width: 250px;
+  .checklist-div{
+    margin-bottom: 50px;
   }
 }
-@media (max-width: 750px) {
-  .vision {
-    flex-direction: column-reverse;
-    text-align: center;
-  }
-}
-@media (max-width: 500px) {
-  .text-content {
-    width: 90%;
+@media (max-width: 441px) {
+  .proof-card {
+    align-items: start;
   }
 }

@@ -40,9 +40,6 @@
   max-width: 400px;
   border-radius: 10px;
 }
-.card svg {
-  color: var(--third-color);
-}
 .card:hover {
   transform: translateY(-0.5rem);
 }
