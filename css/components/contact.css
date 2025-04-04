@@ -23,6 +23,21 @@
   text-align: center;
   padding: 0 15px 0 15px;
 }
+.contact-type {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0 20px 0;
+}
+.contact-type button {
+  /* border: solid white; */
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 25px;
+  color: inherit;
+}
+.btn-active {
+  background-color: var(--cta-btn-bgC);
+}
 
 /* form-book-div */
 #info-form-div {
@@ -86,6 +101,11 @@ textarea {
   color: inherit;
 }
 
+/* book */
+#book-div {
+  display: none;
+}
+
 /* media queries */
 @media (max-width: 915px) {
   #info-form-div {
@@ -101,7 +121,7 @@ textarea {
   .form-div {
     max-width: 90%;
   }
-  .send-h3{
+  .send-h3 {
     text-align: center;
   }
 }

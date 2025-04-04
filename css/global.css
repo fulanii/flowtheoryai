@@ -56,3 +56,6 @@ a {
 svg{
     color: var(--third-color);
 }
+button:hover{
+    cursor: pointer;
+}
