@@ -2,7 +2,7 @@
 
 const hambuger = document.querySelector(".bi-list");
 const modal = document.querySelector(".modal");
-const bookBtn = document.querySelectorAll(".nav-cta-btn");
+const bookBtn = document.querySelector(".nav-book");
 
 const serviceA = document.querySelector(".services-a");
 const aboutA = document.querySelector(".about-a");
@@ -49,13 +49,25 @@ ModalSer.addEventListener("click", (event) => {
     behavior: "smooth",
     block: "start",
   });
-}
-);
+});
 ModalAbt.addEventListener("click", (event) => {
   event.preventDefault();
   aboutSection.scrollIntoView({
     behavior: "smooth",
     block: "start",
   });
-}
-);
+});
+
+// book call btn
+bookBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+
+  bookDiv.scrollIntoView({ behavior: "smooth", block: "end" });
+
+  quickBtn.classList.remove("btn-active");
+  qBookBtn.classList.add("btn-active");
+
+  infoFormDiv.style.display = "none";
+  bookDiv.style.display = "flex";
+  bookDiv.style.minWidth = "90vw";
+});
