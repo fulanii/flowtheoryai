@@ -1,61 +1,69 @@
 :root {
-    /* Colors */
-    --primary-color: #4F46E5;
-    --secondary-color: #6366F1;
-    --third-color: rgb(51 195 240);
-    --background-color: rgb(15 15 17);
-    /* linear-gradient(115deg, #62cff4, #2c67f2); linear-gradient(45deg, #08265d 0, #104cba 45%);  brown;  linear-gradient(45deg, #551bac, #315dc4); */
-    --text-color: white;
-    --accent-color: #EC4899;
-    --cta-btn-bgC: #1e3a8ae6;
-    --dark-bg-color: #17222c;
-    --svg-color: rgb(51 195 240);
-    --svg-bg: #1e3a8a33;
-    --animation-bg: #ffffff1a;
-    --gray-text: #ffffffb3;
+  /* Colors */
+  --primary-color: #4f46e5;
+  --secondary-color: #6366f1;
+  --third-color: rgb(51 195 240);
+  --background-color:  linear-gradient( 179deg,  rgba(0,0,0,1) 9.2%, rgba(127,16,16,1) 103.9% );
+  /* 
+    rgb(15 15 17);
+    linear-gradient( 179deg,  rgba(0,0,0,1) 9.2%, rgba(127,16,16,1) 103.9% )
+    radial-gradient( circle farthest-corner at 10% 20%,  rgba(100,43,115,1) 0%, rgba(4,0,4,1) 90% );
+    linear-gradient(115deg, #62cff4, #2c67f2);
+    linear-gradient(45deg, #08265d 0, #104cba 45%);  brown;  linear-gradient(45deg, #551bac, #315dc4); 
+    */
+  --text-color: white;
+  --accent-color: #ec4899;
+  --cta-btn-bgC: #1e3a8ae6;
+  --dark-bg-color: #17222c;
+  --svg-color: rgb(51 195 240);
+  --svg-bg: #1e3a8a33;
+  --animation-bg: #ffffff1a;
+  --gray-text: #ffffffb3;
+  --boder-color: #e5e7eb;
 
-    /* Typography */
-    --font-body: 'Inter', sans-serif;
-    --font-heading: 'Poppins', sans-serif;
-    --font-azeret-mono: azeret-mono, "azeret mono", monospace;
+  /* Typography */
+  --font-body: "Inter", sans-serif;
+  --font-heading: "Poppins", sans-serif;
+  --font-azeret-mono: azeret-mono, "azeret mono", monospace;
 
-    /* effects */
-    --hero-h2-shadow: 3px 3px 10px var(--third-color);
+  /* effects */
+  --hero-h2-shadow: 3px 3px 10px var(--third-color);
 }
 
 /* Apply Box-Sizing Globally */
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    /* overflow-x: hidden; */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* overflow-x: hidden; */
 }
 /* Set Up Body */
 body {
-    font-family: var(--font-body);
-    color: var(--text-color);
-    line-height: 1.6;
-    background: var(--background-color);
-    background-attachment: fixed; /* Keeps the gradient consistent */
-    background-size: cover; /* Ensures it fills the entire screen */
+  font-family: var(--font-body);
+  color: var(--text-color);
+  line-height: 1.6;
+  background: var(--background-color);
+  background-attachment: fixed; /* Keeps the gradient consistent */
+  background-size: cover; /* Ensures it fills the entire screen */
 }
 
 /* Links */
 a {
-    text-decoration: none;
-    color: var(--text-color);
+  text-decoration: none;
+  color: var(--text-color);
 }
-svg{
-    color: var(--third-color);
+svg {
+  color: var(--third-color);
 }
-button:hover{
-    cursor: pointer;
+button:hover {
+  cursor: pointer;
 }

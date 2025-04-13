@@ -87,7 +87,7 @@
 form input,
 textarea {
   width: 100%;
-  border: solid var(--text-color);
+  border: 1px solid var(--boder-color);
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 10px;
