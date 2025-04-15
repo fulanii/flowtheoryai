@@ -7,6 +7,7 @@ const infoFormDiv = document.querySelector("#info-form-div");
 const bookDiv = document.querySelector("#book-div");
 
 const form = document.querySelector("#contact-form");
+const textarea = document.querySelector("textarea");
 
 qBookBtn.addEventListener("click", function () {
   quickBtn.classList.remove("btn-active");
@@ -42,11 +43,15 @@ form.addEventListener("submit", function (e) {
   })
     .then((response) => response)
     .then((data) => {
-
       if (data.status === 200 && data.ok === true) {
         alert("Form submitted successfully!");
         form.reset();
       }
-      
     });
+});
+
+// Auto-resize textarea
+textarea.addEventListener("input", () => {
+  textarea.style.height = "auto"; // Reset height
+  textarea.style.height = textarea.scrollHeight + "px"; // Set new height
 });

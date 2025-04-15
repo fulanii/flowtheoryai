@@ -93,6 +93,10 @@ textarea {
   border-radius: 10px;
   color: inherit;
 }
+textarea {
+  resize: none; /* Prevent manual resizing */
+  overflow-y: hidden; /* Hide scrollbar */
+}
 .submit {
   width: 100%;
   background-color: var(--cta-btn-bgC);
