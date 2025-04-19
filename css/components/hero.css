@@ -102,12 +102,10 @@
   text-shadow: var(--yellow-shadow-effect);
 }
 .hero-h2 {
-  font-size: clamp(24px, 5vw, 60px);
-  font-weight: 300;
+  font-size: clamp(10px, 3.5vw, 40px);
   color: var(--text-color);
-  margin: 0 0 40px 0;
-  font-weight: 700;
-  /* width: 600px; */
+  margin: 40px 0 40px 0;
+  line-height: 2;
 }
 .hero-h2-span {
   color: var(--third-color);
@@ -118,7 +116,7 @@
   gap: 10px;
 }
 .cta-div button {
-  font-size: clamp(12px, 2vw, 25px);
+  font-size: clamp(12px, 1vw, 25px);
   display: flex;
   align-items: center;
 }
@@ -146,21 +144,21 @@
     margin-top: 50px;
     width: clamp(100px, 70vw, 600px);
   }
-  .hero-h2 {
+  /* .hero-h2 {
     width: fit-content;
     margin-top: 0;
     font-weight: 700;
     margin-top: 30px;
     font-size: clamp(24px, 6vw, 60px);
-  }
+  } */
   #hero-section {
     margin-top: 50px;
   }
 }
 @media (max-width: 350px) {
-  .hero-h2 {
+  /* .hero-h2 {
     font-size: 20px;
-  }
+  } */
   .hero button {
     width: 150px;
   }
@@ -172,7 +170,7 @@
   .hero-h1 {
     font-size: 20px;
   }
-  .hero-h2 {
+  /* .hero-h2 {
     font-size: 20px;
-  }
+  } */
 }
