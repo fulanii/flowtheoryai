@@ -22,7 +22,7 @@
   --boder-color: #e5e7eb;
 
   /* Typography */
-  --font-body: "Inter", sans-serif;
+  --font-body: verdana; /*"Inter", sans-serif;*/
   --font-heading: "Poppins", sans-serif;
   --font-azeret-mono: azeret-mono, "azeret mono", monospace;
 
