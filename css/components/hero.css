@@ -102,7 +102,7 @@
   text-shadow: var(--yellow-shadow-effect);
 }
 .hero-h2 {
-  font-size: clamp(10px, 3.5vw, 40px);
+  font-size: clamp(20px, 4vw, 70px);
   color: var(--text-color);
   margin: 40px 0 40px 0;
   line-height: 2;
