@@ -9,10 +9,18 @@ exploreBtn.addEventListener("click", (event) => {
     block: "start",
   });
 });
+
+// start AI Journey btn clicked
 journeyBtn.addEventListener("click", (event) => {
   event.preventDefault();
-  contactSection.scrollIntoView({
-    behavior: "smooth",
-    block: "start",
-  });
+
+  bookDiv.scrollIntoView({ behavior: "smooth", block: "end" });
+
+  quickBtn.classList.remove("btn-active");
+  qBookBtn.classList.add("btn-active");
+
+  infoFormDiv.style.display = "none";
+  bookDiv.style.display = "flex";
+  bookDiv.style.minWidth = "90vw";
 });
+
