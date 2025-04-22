@@ -3,9 +3,9 @@
   --primary-color: #4f46e5;
   --secondary-color: #6366f1;
   --third-color: rgb(51 195 240);
-  --background-color:  linear-gradient( 179deg,  rgba(0,0,0,1) 9.2%, rgba(127,16,16,1) 103.9% );
+  --background-color: linear-gradient( 179deg,  rgba(0,0,0,1) 9.2%, #091057 103.9% ); 
+
   /* 
-    rgb(15 15 17);
     linear-gradient( 179deg,  rgba(0,0,0,1) 9.2%, rgba(127,16,16,1) 103.9% )
     radial-gradient( circle farthest-corner at 10% 20%,  rgba(100,43,115,1) 0%, rgba(4,0,4,1) 90% );
     linear-gradient(115deg, #62cff4, #2c67f2);
@@ -25,6 +25,7 @@
   --font-body: verdana; /*"Inter", sans-serif;*/
   --font-heading: "Poppins", sans-serif;
   --font-azeret-mono: azeret-mono, "azeret mono", monospace;
+  --font-mono: monospace;
 
   /* effects */
   --hero-h2-shadow: 3px 3px 10px var(--third-color);

@@ -89,7 +89,7 @@
   color: var(--third-color);
 }
 .custom span {
-  font-family: var(--font-azeret-mono);
+  font-family: var(--font-mono);
 }
 /* ^^ */
 
